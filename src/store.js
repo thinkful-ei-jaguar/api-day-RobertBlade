@@ -32,8 +32,8 @@ const findAndUpdate = function (id, newData) {
   console.log(`The id passed in is: ${id}`);
   console.log(`The new data is: ${newData}`);
   let currentItem = this.findById(id);
-
   Object.assign(currentItem, newData);
+  
 };
 
 const findAndDelete = function (id) {
