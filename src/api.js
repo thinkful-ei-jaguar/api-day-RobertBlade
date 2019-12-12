@@ -25,9 +25,18 @@ const updateItem = function (id, updateData) {
       'Content-Type': 'application/json',
     },
     body: newData
-
   });
 };
+const DeleteItem = function (id) {
+  console.log(`${BASE_URL}/items/${id}`);
+  return fetch(`${BASE_URL}/items/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    }
+  });
+
+}
 
 /*
 let newItem = new {
@@ -55,5 +64,6 @@ let newItem = new {
 export default {
   getItems,
   createItem,
-  updateItem
+  updateItem,
+  DeleteItem
 };
