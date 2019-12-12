@@ -8,9 +8,12 @@ import api from './api';
 import shoppingList from './shopping-list';
 
 const main = function () {
-  api.getItems()
-  .then(res => console.log(res));
-  console.log(api.BASE_URL);
+  
+  
+
+  // eslint-disable-next-line indent
+    //.then(res => console.log(res));
+  
 
   shoppingList.bindEventListeners();
   shoppingList.render();
